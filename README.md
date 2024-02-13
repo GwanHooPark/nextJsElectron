@@ -1,6 +1,6 @@
 # NextJs + Electron
 
-[![electron](https://img.shields.io/badge/Electron-47848F.svg?style=for-the-badge&logo=Electron&logoColor=white)](https://www.electronjs.org/) [![NextJs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![electron](https://img.shields.io/badge/Electron-v28.2.2-47848F.svg?style=flat-square&logo=Electron&logoColor=white)](https://www.electronjs.org/) [![NextJs](https://img.shields.io/badge/next.js-14.1.0-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 
 ## Environment
 ```bash
