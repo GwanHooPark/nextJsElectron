@@ -37,7 +37,7 @@ pnpm build
 bun build
 ```
 
-## NextJs create option
+## NextJs create option 
 ```bash
 ghpark@daou-ghpark source % npx create-next-app@latest nextdomessenger        
 ✔ Would you like to use TypeScript? …  Yes
