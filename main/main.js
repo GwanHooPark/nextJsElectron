@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, Menu } = require("electron");
 const serve = require("electron-serve");
 const path = require("path");
 
@@ -28,8 +28,40 @@ const createWindow = () => {
     }
 }
 
+const createMenu = () => {
+    const template = [
+        {
+            label: "File",
+            submenu: [
+                {
+                    label: "Exit",
+                    role: "quit"
+                }
+            ]
+        },
+        {
+            label: "View",
+            submenu: [
+                {
+                    label: "Reload",
+                    role: "reload"
+                },
+                {
+                    label: "Toggle Developer Tools",
+                    role: "toggleDevTools"
+                }
+            ]
+        }
+    ];
+
+    const menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
+
+}
+
 app.on("ready", () => {
     createWindow();
+    createMenu();
 });
 
 app.on("window-all-closed", () => {
